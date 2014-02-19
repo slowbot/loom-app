@@ -2,6 +2,14 @@
   text-align: center;
 }
 
-footer {
-  display: block;
+.block {
+	display: block;
+}
+
+.inline {
+	display: left;
+}
+
+.relative {
+	position: relative;
 }

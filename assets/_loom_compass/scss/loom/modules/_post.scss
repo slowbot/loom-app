@@ -10,4 +10,8 @@ $column-padding: $base-line-height;
 		padding-left: $column-padding / 2;
 		padding-right: $column-padding / 2;
 	}
+	
+	.post-header {
+		@include clearfix(); 
+	}
 }

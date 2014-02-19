@@ -32,9 +32,12 @@ $column-padding: $base-line-height;
 	}
 }
 
-.middle-left, .middle-right {
+.top-left, .top-right, .bottom-left, .bottom-right {
 	position: absolute;
-	top: 50%;
+}
+
+.top-left, .top-right {
+	top: $column-padding;
 }
 
 .top-left {
@@ -45,8 +48,25 @@ $column-padding: $base-line-height;
 	right: $column-padding;
 }
 
+.bottom-left, .bottom-right {
+	bottom: $column-padding;
+}
+
+.bottom-left {
+	left: $column-padding;
+}
+
+.bottom-right {
+	right: $column-padding;
+}
+
 .inline-list {
 	li {
-		display: inline;
-		}
+		display: inline-block;
+	}
+}
+
+.centered {
+	float: none !important;
+	margin: 0 auto;
 }

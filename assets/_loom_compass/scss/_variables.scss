@@ -17,19 +17,24 @@ $condensed-font-family: "proxima-nova-extra-condensed", "proximanovaextracondens
 $primary-color:     #ff6a00 !default;
 $secondary-color:   #4b3815 !default;
 $wash-color:        #f8f3e3 !default;
+$tint-color:        #ccc8bb !default;
+$dim-color:       	#b4ac9f !default;
+$dark-color:  			#8b8274 !default;
 
 // $System Colors
 
 $alert-color:       #ffe0e0 !default;
 $success-color:     #8ec448 !default;
 $warning-color:     #ff9600 !default;
+
 $blank-color:       #ffffff !default;
 $type-color:        #444444 !default;
 $disabled-color:    #bbbbbb !default;
-$tint-color:        #e9e9e9 !default;
+
 
 // Icon Variables
 $icon-square:    remCalc( 50px ) !default;
+$icon-path:      "../fonts/";
 
 // Compass Mixin Defaults
 $default-border-radius: 5px;
@@ -39,6 +44,9 @@ $default-box-shadow-v-offset: 0px;
 $default-box-shadow-blur: 0px;
 $default-transition-property: all;
 $default-background-clip: padding-box;
+
+$row-padding: $base-line-height;
+$column-padding: $base-line-height;
 
 // $Breakpoints
 // Change these valuese to desired screen sizes

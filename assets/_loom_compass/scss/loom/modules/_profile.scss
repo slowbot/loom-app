@@ -1,0 +1,21 @@
+.profile {
+	padding-top: $row-padding;
+	padding-bottom: $row-padding;
+
+	.avatar {	
+		img {
+			border: 2px solid #fff;
+		}		
+	}
+	
+	a {
+		color: $blank-color;
+	}
+	
+	.stats {
+		li {
+			display: inline-block;
+			margin-left: $column-padding;
+		}
+	}
+}	

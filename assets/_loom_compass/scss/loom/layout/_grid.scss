@@ -95,21 +95,13 @@ $size4of5-width: 80%;
   padding: 0 $column-padding / 4 $column-padding $column-padding / 4 ; 
 	
 	@include breakpoint( medium ) { 
-  &.size1of4 { width: $size1of2-width; }
-  }
-  
-  @include breakpoint( desktop ) { 
-  &.size1of4 { width: $size1of3-width; }
-  }
-  
-	@include breakpoint( large ) {
+
   padding-bottom: 0;
-  
   &.size1of1 { float: none;}
   &.size1of2 { width: $size1of2-width; }
   &.size1of3 { width: $size1of3-width; }
   &.size2of3 { width: $size2of3-width; }
-  &.size1of4 { width: $size1of4-width; }
+  &.size1of4 { width: $size1of2-width; }
   &.size3of4 { width: $size3of4-width; }
   &.size1of5 { width: $size1of5-width; }
   &.size2of5 { width: $size2of5-width; }
@@ -117,21 +109,14 @@ $size4of5-width: 80%;
   &.size4of5 { width: $size4of5-width; }
   &.right { float: right;}
   }
-	
-
-  @include breakpoint( desktop ) {
-  &.right1of2 { padding-right: $size1of2-width; }
-  &.right1of3 { padding-right: $size1of3-width; }
-  &.right2of3 { padding-right: $size2of3-width; }
-  &.right1of4 { padding-right: $size1of4-width; }
-  &.right3of4 { padding-right: $size3of4-width; }
-  &.right1of5 { padding-right: $size1of5-width; }
-  &.right2of5 { padding-right: $size2of5-width; }
-  &.right3of5 { padding-right: $size3of5-width; }
-  &.right4of5 { padding-right: $size4of5-width; }
   
+  @include breakpoint( desktop ) { 
+  &.size1of4 { width: $size1of3-width; }
   }
   
+	@include breakpoint( large ) {
+	&.size1of4 { width: $size1of4-width; }
+  }
 }
 
 .column:last-of-type {  }

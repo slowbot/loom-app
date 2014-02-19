@@ -13,12 +13,6 @@ $font-weight: 300;
 // $Header sizes
 // -------------------------------------//
 
-$alpha: 72;
-$beta: 54;
-$gamma: 45;
-$delta: 36;
-$epsilon: 24;
-$zeta: 16;
 
 // $Styles Global
 // -------------------------------------//
@@ -26,16 +20,6 @@ $zeta: 16;
 %font-size {
   font-size: $base-font-size;
   line-height: $base-line-height;
-   
-   @include breakpoint( medium ) {
-   //font-size: $medium-font-size;
-   //line-height: $medium-line-height;
-   }
-   
-   @include breakpoint( large ) {
-   //font-size: $large-font-size;
-   //line-height: $large-line-height;
-   }
 }
 
 html {
@@ -44,7 +28,8 @@ html {
 }
 
 body {
-
+	font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 // styles for all headings
@@ -56,14 +41,6 @@ body {
 
 %rythmn-unit {
   margin-bottom: $base-line-height / $base-font-size * 1rem;
-   
-   @include breakpoint( medium ) {
-   //margin-bottom: $medium-line-height / $medium-font-size * 1rem;
-   }
-   
-   @include breakpoint( large ) {
-   //margin-bottom: $large-line-height / $large-font-size * 1rem;
-   }
 }
 
 // h1-h6 tags
@@ -119,14 +96,14 @@ p {
 .post {
 	h1,
 	.alpha {
-		@include adjust-font-size-to(16px);
+		@include adjust-font-size-to(17px);
 	//	@include rhythm(0, 0, 0, 1);
 		@extend %hN;
 	}
 	
 	h2,
 	.beta {
-	  @include adjust-font-size-to(14px);
+	  @include adjust-font-size-to(16px);
 	  @include adjust-leading-to(.75);
 	  @include rhythm(0, 0, 0, 0);
 		@extend %hN;
@@ -135,7 +112,7 @@ p {
 	
 	h3,
 	.gamma {
-	  @include adjust-font-size-to(13px);
+	  @include adjust-font-size-to(14px);
 	  @include adjust-leading-to(.75);
 	  @include rhythm(0, 0, 0, 0);
 		@extend %hN;
@@ -144,7 +121,7 @@ p {
 	
 	h4,
 	.delta {
-	  @include adjust-font-size-to(14px);
+	  @include adjust-font-size-to(13px);
 	  @include rhythm(0, 0, 0, 0);
 		@extend %hN;
 		text-transform: uppercase;
@@ -177,11 +154,20 @@ a {
   color: $primary-color;
 }
 
-nav li {
-  font-family: $sans-font-family;
-  text-transform: uppercase;
+.small {
+	@include adjust-font-size-to(10px);
+	text-transform: none;
 }
 
 .sans {
 	font-family: $sans-font-family;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+nav li {
+  font-family: $sans-font-family;
+  text-transform: uppercase;
 }

@@ -1,3 +1,13 @@
 // Colors  
-
+  .st-swatch {
+    display: block;
+    width: 100%;
+    height: 4em;
+  }
   
+  .primary-color { background: $primary-color; }
+  .secondary-color { background: $secondary-color; }
+  .wash-color { background: $wash-color; }
+  .tint-color { background: $tint-color; }
+  .dim-color { background: $dim-color; }
+  .dark-color { background: $dark-color; }
