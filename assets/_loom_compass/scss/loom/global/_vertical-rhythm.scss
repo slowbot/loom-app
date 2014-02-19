@@ -1,0 +1,187 @@
+@import "compass/typography/vertical_rhythm";
+
+// $BaseType
+// -------------------------------------//
+
+$font-unit: 1rem;
+$base-rhythm-unit: $base-line-height / $base-font-size * 1rem;
+$base-leader: ($base-line-height - $base-font-size) * 1em / $base-font-size;
+$base-half-leader: $base-leader / 2;
+$relative-font-sizing: false;
+$font-weight: 300;
+
+// $Header sizes
+// -------------------------------------//
+
+$alpha: 72;
+$beta: 54;
+$gamma: 45;
+$delta: 36;
+$epsilon: 24;
+$zeta: 16;
+
+// $Styles Global
+// -------------------------------------//
+
+%font-size {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+   
+   @include breakpoint( medium ) {
+   //font-size: $medium-font-size;
+   //line-height: $medium-line-height;
+   }
+   
+   @include breakpoint( large ) {
+   //font-size: $large-font-size;
+   //line-height: $large-line-height;
+   }
+}
+
+html {
+  font-family: $sans-font-family;
+  @include establish-baseline;
+}
+
+body {
+
+}
+
+// styles for all headings
+%hN {
+	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
+	display: block;
+	font-weight: 600;
+}
+
+%rythmn-unit {
+  margin-bottom: $base-line-height / $base-font-size * 1rem;
+   
+   @include breakpoint( medium ) {
+   //margin-bottom: $medium-line-height / $medium-font-size * 1rem;
+   }
+   
+   @include breakpoint( large ) {
+   //margin-bottom: $large-line-height / $large-font-size * 1rem;
+   }
+}
+
+// h1-h6 tags
+h1,
+.alpha {
+	@include adjust-font-size-to(48px);
+//	@include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+h2,
+.beta {
+  @include adjust-font-size-to(36px);
+  @include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+h3,
+.gamma {
+  @include adjust-font-size-to(28px);
+  @include adjust-leading-to(1.5);
+  @include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+h4,
+.delta {
+  @include adjust-font-size-to(18px);
+  @include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+h5,
+.epsilon {
+  @include adjust-font-size-to(16px);
+  @include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+h6,
+.zeta {
+  @include adjust-font-size-to(14px);
+  @include rhythm(0, 0, 0, 1);
+	@extend %hN;
+}
+
+p {
+	@include adjust-font-size-to(16px);
+	@include rhythm(0, 0, 0, 1);
+  font-weight: 300;
+}
+
+.post {
+	h1,
+	.alpha {
+		@include adjust-font-size-to(16px);
+	//	@include rhythm(0, 0, 0, 1);
+		@extend %hN;
+	}
+	
+	h2,
+	.beta {
+	  @include adjust-font-size-to(14px);
+	  @include adjust-leading-to(.75);
+	  @include rhythm(0, 0, 0, 0);
+		@extend %hN;
+		text-transform: uppercase;
+	}
+	
+	h3,
+	.gamma {
+	  @include adjust-font-size-to(13px);
+	  @include adjust-leading-to(.75);
+	  @include rhythm(0, 0, 0, 0);
+		@extend %hN;
+		text-transform: uppercase;
+	}
+	
+	h4,
+	.delta {
+	  @include adjust-font-size-to(14px);
+	  @include rhythm(0, 0, 0, 0);
+		@extend %hN;
+		text-transform: uppercase;
+	}
+	
+	h5,
+	.epsilon {
+	  @include adjust-font-size-to(12px);
+	  @include rhythm(0, 0, 0, 0);
+		@extend %hN;
+	}
+	
+	h6,
+	.zeta {
+	  @include adjust-font-size-to(11px);
+	  @include rhythm(0, 0, 0, 0);
+		@extend %hN;
+	}
+	
+	p, span {
+		@include adjust-font-size-to(12px);
+		@include adjust-leading-to(.75);
+		@include rhythm(0, 0, 0, 0);
+	  font-weight: 300;
+	}
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+nav li {
+  font-family: $sans-font-family;
+  text-transform: uppercase;
+}
+
+.sans {
+	font-family: $sans-font-family;
+}

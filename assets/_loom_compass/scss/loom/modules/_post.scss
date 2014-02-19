@@ -1,0 +1,13 @@
+@import "compass/typography/vertical_rhythm";
+$row-padding: $base-line-height;
+$column-padding: $base-line-height;
+
+.post {
+	background-color: $wash-color;
+	@include rhythm(.5, .5, .5, 0);
+	
+	[class*='post-'] {
+		padding-left: $column-padding / 2;
+		padding-right: $column-padding / 2;
+	}
+}

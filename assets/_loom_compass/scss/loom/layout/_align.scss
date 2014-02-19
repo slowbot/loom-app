@@ -1,0 +1,52 @@
+$row-padding: $base-line-height;
+$column-padding: $base-line-height;
+
+.left, .base-left {
+	float: left;
+}
+
+.right, .base-right {
+	float: right;
+}
+
+.clear {
+	@include clearfix(); 
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+@include breakpoint( medium ) {
+	
+	.base-left, .base-right {
+		float: none;
+	}
+	
+	.medium-left {
+		float: left;
+	}
+	
+	.medium-right {
+		float: right;
+	}
+}
+
+.middle-left, .middle-right {
+	position: absolute;
+	top: 50%;
+}
+
+.top-left {
+	left: $column-padding;
+}
+
+.top-right {
+	right: $column-padding;
+}
+
+.inline-list {
+	li {
+		display: inline;
+		}
+}
