@@ -72,7 +72,11 @@ $size4of5-width: 80%;
 
 // Floated elements
 
-.unit { float:left; 
+.unit { 
+
+	float:left;
+	padding: 0 .25em;
+	 
   &.size1of1 { float: none;}
   &.size1of2 { width: $size1of2-width; }
   &.size1of3 { width: $size1of3-width; }
@@ -92,7 +96,11 @@ $size4of5-width: 80%;
 
 .column { 
   float:left;
-  padding: 0 $column-padding / 4 $column-padding / 3 $column-padding / 4 ; 
+  padding: 0 .5em ; 
+	
+	&.centered {
+		padding: 0;
+	}
 	
 	@include breakpoint( medium ) { 
 

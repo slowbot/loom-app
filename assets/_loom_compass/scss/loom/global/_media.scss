@@ -1,9 +1,13 @@
 img, video, object {
-max-width: 100%;
-height: auto;
+	max-width: 100%;
+	height: auto;
+	
+	&.no-resize {
+		max-width: none;
+	}
 }
 
-.squeeze-figure {
+.squeeze {
   overflow: hidden;
   
   @include breakpoint( medium ) {
