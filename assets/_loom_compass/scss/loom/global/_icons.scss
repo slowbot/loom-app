@@ -1,3 +1,5 @@
+@import "compass/typography/vertical_rhythm";
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('#{$icon-path}icomoon.eot?np0hpw');
@@ -67,4 +69,44 @@
 }
 .icon-forward:before {
 	content: "\e607";
+}
+
+.icon-list, .icon-list-block {
+	li {
+		display: inline-block;
+		margin-right: .5rem;
+		line-height: emCalc(30px);
+		&.selected a {
+			color: $primary-color;	
+		}
+	}
+	
+	a {
+		display: block;
+		color: $dark-color;
+		&:hover {
+			color: $primary-color;	
+		}
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+		display: inline-block;
+		font-size: remCalc(22px);
+		vertical-align: middle;
+		line-height: emCalc(30px);
+		height: emCalc(30px);
+		width: emCalc(30px);
+	}
+}
+
+.icon-list-block {
+	li {
+		text-align: center;
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
 }

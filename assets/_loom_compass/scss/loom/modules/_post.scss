@@ -5,14 +5,30 @@ $column-padding: $base-line-height;
 .post {
 	background-color: $wash-color;
 	@include box-shadow(1px 1px 1px rgba($dim-color, .25));
-	@include rhythm(.5, .5, .5, 0);
+	margin-bottom: .75em;
 	
 	[class*='post-'] {
-		padding-left: $column-padding / 2;
-		padding-right: $column-padding / 2;
+		padding: $column-padding / 3 $column-padding / 2;
 	}
 	
 	.post-header {
-		@include clearfix(); 
+		@include clearfix();
+		h2 {
+			margin-top: .75em;
+		}
+	}
+	
+	.avatar {
+		margin-right: .5em;
+	}
+	
+	h3, .meta {
+		color: $dim-color;
+	}
+	
+	a {
+	[class^="icon-"], [class*=" icon-"]	 {
+			 color: $dim-color;
+		}
 	}
 }

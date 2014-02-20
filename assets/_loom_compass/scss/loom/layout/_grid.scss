@@ -60,7 +60,7 @@ $size4of5-width: 80%;
     max-width: $row-medium-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding: $row-padding $row-padding;    
+    padding: $row-padding;    
   }
   
   .row {
@@ -92,7 +92,7 @@ $size4of5-width: 80%;
 
 .column { 
   float:left;
-  padding: 0 $column-padding / 4 $column-padding $column-padding / 4 ; 
+  padding: 0 $column-padding / 4 $column-padding / 3 $column-padding / 4 ; 
 	
 	@include breakpoint( medium ) { 
 
