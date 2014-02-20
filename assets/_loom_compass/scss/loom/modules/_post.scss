@@ -4,6 +4,7 @@ $column-padding: $base-line-height;
 
 .post {
 	background-color: $wash-color;
+	@include box-shadow(1px 1px 1px rgba($dim-color, .25));
 	@include rhythm(.5, .5, .5, 0);
 	
 	[class*='post-'] {

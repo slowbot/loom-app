@@ -44,17 +44,20 @@
 /* line 5, ../_loom_compass/scss/loom/modules/_post.scss */
 .post {
   background-color: #f8f3e3;
+  -webkit-box-shadow: 1px 1px 1px rgba(180, 172, 159, 0.25);
+  -moz-box-shadow: 1px 1px 1px rgba(180, 172, 159, 0.25);
+  box-shadow: 1px 1px 1px rgba(180, 172, 159, 0.25);
   margin-top: 0.75em;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   margin-bottom: 0em;
 }
-/* line 9, ../_loom_compass/scss/loom/modules/_post.scss */
+/* line 10, ../_loom_compass/scss/loom/modules/_post.scss */
 .post [class*='post-'] {
   padding-left: 12px;
   padding-right: 12px;
 }
-/* line 14, ../_loom_compass/scss/loom/modules/_post.scss */
+/* line 15, ../_loom_compass/scss/loom/modules/_post.scss */
 .post .post-header {
   overflow: hidden;
   *zoom: 1;
@@ -585,19 +588,14 @@ img, video, object {
 }
 
 /* Theme */
-/* line 1, ../_loom_compass/scss/loom/global/_colors.scss */
-.underline {
-  border-bottom: 2px solid #ccc8bb;
-  margin-top: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.75rem;
+/* line 3, ../_loom_compass/scss/loom/global/_colors.scss */
+body {
+  background-color: #f0ead4;
 }
 
-/* Color */
 /* line 7, ../_loom_compass/scss/loom/global/_colors.scss */
 .tinted {
-  background-color: #ccc8bb;
+  background-color: #f0ead4;
 }
 
 /* Forms */
@@ -1312,7 +1310,7 @@ nav[role=navigation] li span {
 
 /* line 11, ../_loom_compass/scss/loom/views/_patterns.scss */
 .tint-color {
-  background: #ccc8bb;
+  background: #f0ead4;
 }
 
 /* line 12, ../_loom_compass/scss/loom/views/_patterns.scss */

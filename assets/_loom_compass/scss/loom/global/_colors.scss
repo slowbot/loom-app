@@ -1,7 +1,8 @@
-.underline { 
-  border-bottom: 2px solid $tint-color;
-  @include rhythm(0, 0, .5, .5); 
-  }
+// Color
 
-/* Color */
+body {
+	background-color: $tint-color;
+}
+
 .tinted { background-color: $tint-color; }
+
