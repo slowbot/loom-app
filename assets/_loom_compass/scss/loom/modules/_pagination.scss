@@ -1,10 +1,9 @@
-.shuttle {
-	
+.shuttle {	
 	display: block;
-	
 	.arrow {
 		display: block;
 		position: absolute;
+		
 		height: remCalc(42px);
 		width: remCalc(42px);
 		line-height: remCalc(42px);
@@ -12,8 +11,6 @@
 		text-align: center;
 
 		color: $dark-color;
-		
-		//@include border-radius(50px);
 		
 		transition: ease-in-out all .4s; 
     -moz-transition: ease-in-out all .4s;
@@ -27,6 +24,10 @@
 		}
 	}
 	
+	.left-arrow, .right-arrow {
+		top: 50%;			 
+	}
+	
 	.left-arrow {
 		left: 0;
 	}
@@ -35,59 +36,17 @@
 		right: 0;
 	}
 	
-	.left-arrow, .right-arrow {
-		top: 50%;
-		
-		@include breakpoint( medium ) {
-		 	top: 50%;
+	&.fixed {
+		.arrow {
+			position: fixed;		
 		}
 		
-		@include breakpoint( large ) {
-
-		}		 
-				 
-	}
-	
-	@include breakpoint( small ) {
-//		display: block;
-	}
-	
-}
-
-.shuttle.fixed {
-	.arrow {
-		position: fixed;		
-	}
-	
-	.left-arrow, .right-arrow {
-		top: 50%;
-		
-		@include breakpoint( medium ) {
-		 	top: 50%;
-		}
-	}		
-}	
-
-.mobile-relative, .single-project .content-sidebar-wrap {
-	position: relative;	
-	@include breakpoint( medium ) {
-		position: static;
+		.left-arrow, .right-arrow {
+			top: 50%;
+			
+			@include breakpoint( medium ) {
+			 	top: 50%;
+			}
+		}		
 	}
 }	
-
-.big-pagination {
-	
-	.paged {
-		
-	}
-	
-	.previous {
-		
-	}
-	
-	.next {
-		
-	}
-	
-	
-}

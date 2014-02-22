@@ -32,7 +32,6 @@ $size4of5-width: 80%;
   padding: $row-padding;
   @include clearfix(); 
   
-  
   &.collapse {
     padding: 0;
   }
@@ -73,7 +72,6 @@ $size4of5-width: 80%;
 // Floated elements
 
 .unit { 
-
 	float:left;
 	padding: 0 .25em;
 	 
@@ -128,5 +126,7 @@ $size4of5-width: 80%;
 }
 
 .column:last-of-type {  }
+
+// Content blocks
 
 .panel { padding: $row-padding }
